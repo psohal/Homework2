@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id="@+id/detail_pokemon_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:id="@+id/detail_pokemon_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/detail_pokemon_name"
+        android:contentDescription="@string/descr_pokemon_recyclerview" />
+
+
+    <TextView
+        android:id="@+id/detail_pokemon_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pokemon_image"
+        android:layout_alignParentEnd="true"
+        android:textSize="22sp"
+        tools:text="Ht: 12"
+        />
+    <TextView
+        android:id="@+id/detail_pokemon_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pokemon_image"
+        android:layout_centerInParent="true"
+        android:textSize="28sp"
+        tools:text="6"
+        />
+    <TextView
+        android:id="@+id/detail_pokemon_weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pokemon_image"
+        android:textSize="22sp"
+        />
+
+    <ProgressBar
+        android:id="@+id/detail_pokemon_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pokemon_id"
+
+        />
+
+    <TextView
+        android:id="@+id/detail_pokemon_attack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pokemon_height"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/detail_pokemon_defense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pokemon_attack"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/detail_pokemon_spc_att"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/detail_pokemon_defense"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/detail_pokemon_spc_def"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/detail_pokemon_spc_att"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/detail_pokemon_hp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pokemon_spc_def"
+        android:layout_marginTop="8dp"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/detail_pokemon_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/detail_pokemon_hp"
+        android:textSize="15sp"
+        />
+
+
+    <TextView
+        android:id="@+id/detail_pokemon_base_exp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_pokemon_speed"
+        android:textSize="15sp"
+        />
+
+</RelativeLayout>
